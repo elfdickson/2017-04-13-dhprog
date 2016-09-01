@@ -1,24 +1,24 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+venue: "Main Library 106"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "1408 W Gregory Dr., Urbana, Illinois"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "us"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "40.109309, -88.228389"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "September 28-29, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "8:30 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-09-28      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2016-09-29        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Elizabeth Wickes", "Eleanor Dickson", "Qian Zhang"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Andrea Thomer"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "dicksone@illinois.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
+notes: http://goo.gl/CJzTQU         # optional (insert the URL for your Etherpad if you're using one)
+registraion: https://my.library.illinois.edu/data-programming       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 day1_am: "Data organization in spreadsheets and OpenRefine"
-day1_pm: "Introduction to R"
-day2_am: "Data analysis and visualization in R"
-day2_pm: "SQL for data management"
+day1_pm: "SQL for data management"
+day2_am: "Introduction to programming concepts"
+day2_pm: "Programming for humanities data"
 ---
 <!--
   HEADER
@@ -36,7 +36,7 @@ day2_pm: "SQL for data management"
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
-{% if page.eventbrite %}
+<--{% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
@@ -45,7 +45,7 @@ day2_pm: "SQL for data management"
   scrolling="auto">
 </iframe>
 {% endif %}
-
+-->
 <h2>General Information</h2>
 
 <!--
@@ -55,15 +55,16 @@ day2_pm: "SQL for data management"
   the pitch.
 -->
 <p>
-<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher 
-who has data they want to analyze, and no prior computational experience is required. 
-This hands-on workshop teaches basic concepts, skills and tools for working more 
-effectively with data. 
+This Humanities Data Programming workshop is for humanities or social science researchers with 
+minimal programming experience who want to integrate data-driven practices into their research. 
+No prior computational experience is required. This hands-on workshop will teach basic concepts, skills and tools for working more 
+effectively with the types of data commonly encountered by humanists and social scientists.
 </p>
 <p>
 We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
 
-Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
+Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should 
+be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
 
 <!--
@@ -74,7 +75,8 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at graduate students, postdocs, and faculty in humanities and social science departments at the 
+  University of Illinois at Urbana-Champaign.
 </p>
 
 <!--
@@ -139,12 +141,12 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 <h2>Preliminary Schedule</h2>
 
-<!-- DO NOT EDIT SURVEY LINKS -->
+<!-- DO NOT EDIT SURVEY LINKS 
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
-
+-->
 
 
 <div class="row">
@@ -152,15 +154,17 @@ Participants should bring their laptops and plan to participate actively. By the
 
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
+      <tr> <td>8:30-12:00</td>  <td>{{page.day1_am}}</td> </tr>
+       <tr> <td>12:00-10:00</td>  <td>Lunch (provided)</td> </tr>
+       <tr> <td>1:00-4:30</td>  <td>{{page.day1_pm}}</td> </tr>
     </table>
  
  
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
-      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
+      <tr> <td>8:30-12:00</td>  <td>{{page.day2_am}}</td> </tr>
+      <tr> <td>12:00-10:00</td>  <td>Lunch (provided)</td> </tr>
+      <tr> <td>1:00-4:30</td>  <td>{{page.day2_pm}}</td> </tr>
     </table>
  </div>
 </div>
@@ -176,15 +180,17 @@ Participants should bring their laptops and plan to participate actively. By the
 
   where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
   '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
 
+{% if page.etherpad %}
+-->
+<p>
+  <strong>Shared notes:</strong> <a href="{{page.notes}}">{{page.notes}}</a>.
+  <br/>
+  We will use this Google doc for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+<!--
+{% endif %}
+-->
 <hr/>
 
 <!--
@@ -209,7 +215,7 @@ Participants should bring their laptops and plan to participate actively. By the
 
 <div class="row">
   <div class="col-md-6">
-    <h3>The Unix Shell</h3>
+    <h3>Data organization in spreadsheets and OpenRefine</h3>
     <ul>
       <li>Files and directories</li>
       <li>History and tab completion</li>
@@ -298,7 +304,7 @@ Participants should bring their laptops and plan to participate actively. By the
 <h2 id="setup">Setup</h2>
 
 <p>
-To participate in a Data Carpentry workshop, you will need working copies of the 
+To participate in this workshop, you will need working copies of the 
 described software. Please make sure to install everything (or at least to download 
 the installers) before the start of your workshop. Participants should bring and use 
 their own laptops to insure the proper setup of tools for an efficient workflow 
