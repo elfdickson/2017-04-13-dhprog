@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "Main Library 106"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "University of Illinois, Main Library 106"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "1408 W Gregory Dr., Urbana, Illinois"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "us"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -164,8 +164,12 @@ Registration link: <a href = "https://my.library.illinois.edu/data-programming">
  </div>
 </div>
 
+
+<h2>
+    ETHERPAD
+</h2>
 <!--
-  ETHERPAD
+
 
   Display the Etherpad for the workshop.  You can set this up in
   advance or on the first day; either way, make sure you push changes
@@ -175,17 +179,17 @@ Registration link: <a href = "https://my.library.illinois.edu/data-programming">
 
   where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
   '2015-06-10-esu'.
-
-{% if page.etherpad %}
 -->
+{% if page.notes %}
+
 <p>
   <strong>Shared notes:</strong> <a href="{{page.notes}}">{{page.notes}}</a>.
   <br/>
   We will use this Google doc for chatting, taking notes, and sharing URLs and bits of code.
 </p>
-<!--
+
 {% endif %}
--->
+
 <hr/>
 
 <!--
