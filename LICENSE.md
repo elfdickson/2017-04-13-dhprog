@@ -3,7 +3,15 @@ layout: page
 root: .
 title: Licenses
 ---
-## Instructional Material
+
+
+## Workshop Curriculum
+
+Curriculum for this workshop is, in part, derived from instructional material created and copyrighted by [Data Carpentry] [datacarpentry] in accordance with their [Creative Commons Attribution license][cc-by-human]. We likewise make available instructional material created especially for this workshop under a [Creative Commons Attribution license][cc-by-human]. The terms of which are described below. 
+
+## Data Carpentry licenses
+
+# Instructional materials
 
 All Data Carpentry instructional material is made available under
 the [Creative Commons Attribution license][cc-by-human]. The following
@@ -44,7 +52,7 @@ Notices:
   rights such as publicity, privacy, or moral rights may limit how you
   use the material.
 
-## Software
+# Software
 
 Except where otherwise noted, the example programs and other software
 provided by Data Carpentry are made available under the
@@ -70,10 +78,11 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Trademark
+# Trademark
 
 "Data Carpentry" has been submitted for US Trademark.
 
+[datacarpentry]: http://www.datacarpentry.org/
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [mit-license]: http://opensource.org/licenses/mit-license.html
